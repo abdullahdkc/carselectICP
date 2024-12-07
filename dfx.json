@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "aracsecim_backend": {
+      "main": "src/aracsecim_backend/main.mo",
+      "type": "motoko"
+    },
+    "aracsecim_frontend": {
+      "dependencies": [
+        "aracsecim_backend"
+      ],
+      "source": [
+        "src/aracsecim_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "aracsecim_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
